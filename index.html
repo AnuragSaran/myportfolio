@@ -558,29 +558,56 @@ IoT applications are quite fascinating, and I have hands-on experience working w
       </section>
 
       <!--=================== Portfolio ===================-->
-     <section class="portfolio section" id="portfolio">
-    <h2 class="section__title">Projects</h2>
-    <span class="section__subtitle">Most recent work</span>
+     <div class="portfolio__container container swiper">
+  <div class="swiper-wrapper">
 
-    <div class="portfolio__container container grid">
-        <!-- Gesture Controlled Car Project -->
-        <div class="portfolio__item">
-            <h3 class="portfolio__title">Gesture Controlled Car</h3>
-            <p class="portfolio__description">
-            
-<b>A smart vehicle that moves with a wave of your hand.</b><br>
+    <!-- Gesture Controlled Car Project -->
+    <div class="portfolio__content grid swiper-slide">
+      <img src="assets/img/IMG_20230223_162149.jpg" alt="Gesture Controlled Car" class="portfolio__img">
 
-The Gesture Controlled Car is an innovative project that allows the user to control the movement of a car using hand gestures. 
-The system uses an accelerometer sensor (MPU6050) attached to the user's hand to detect motion in different directions.
-These signals are sent wirelessly (using RF modules or Bluetooth) to a microcontroller (like Arduino Uno) placed on the car.
-Based on the received gesture, the car moves forward, backward, left, or right. This project enhances human-machine interaction and is a great demonstration of sensor-based robotics and wireless communication.
-            </p>
-            <!-- Add image or link if available -->
-            <!-- <img src="path/to/image.jpg" alt="Gesture Controlled Car" class="portfolio__img"> -->
-            <!-- <a href="link-to-project" class="button button--flex button--small portfolio__button">View More</a> -->
-        </div>
+      <div class="portfolio__data">
+        <h3 class="portfolio__title">Gesture Controlled Car</h3>
+        <p class="portfolio__description">
+          A smart car that uses hand gestures to move forward, backward, left, and right. Controlled using an MPU6050 accelerometer, Arduino Nano, RF wireless modules, and a motor driver. Real-time wireless communication enables gesture-to-movement conversion.
+        </p>
+        <a href="#"
+           class="button button--flex button--small portfolio__button">
+          View More
+          <i class="uil uil-arrow-right button__icon"></i>
+        </a>
+      </div>
     </div>
-</section>
+
+    <!-- Additional images -->
+    <div class="portfolio__content grid swiper-slide">
+      <img src="assets/img/IMG_20230223_162155.jpg" alt="Gesture Car Side View" class="portfolio__img">
+      <div class="portfolio__data">
+        <h3 class="portfolio__title">Component Side</h3>
+        <p class="portfolio__description">Wiring of Arduino Nano, RF Module, and Accelerometer on a breadboard platform.</p>
+      </div>
+    </div>
+
+    <div class="portfolio__content grid swiper-slide">
+      <img src="assets/img/IMG_20230223_162205.jpg" alt="Complete Setup" class="portfolio__img">
+      <div class="portfolio__data">
+        <h3 class="portfolio__title">Full System View</h3>
+        <p class="portfolio__description">Complete setup of the gesture control system and the car unit placed side by side.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Swiper arrows -->
+  <div class="swiper-button-next">
+    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+  </div>
+  <div class="swiper-button-prev">
+    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+  </div>
+
+  <!-- Swiper pagination -->
+  <div class="swiper-pagination"></div>
+</div>
 
 
       <!--===================== Contact Me =====================-->
